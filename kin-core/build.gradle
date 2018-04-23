@@ -20,8 +20,7 @@ android {
 }
 
 dependencies {
-    debugImplementation project(':android-stellar-sdk')
-    releaseImplementation stellarSDK
+    implementation stellarSDK
     implementation supportDependencies.supportAnnotations
 
     testImplementation testingDependencies.junit
