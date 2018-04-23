@@ -10,6 +10,7 @@ ext {
     robolectricVersion = '3.6.1'
     hamcrestVersion = '1.3'
     gsonVersion = '2.4'
+    stellarSDKVersion = '93d9ad7b719a9ba1babc15b906eaa4a62e090897'
 
     //Packages
     supportPackage = 'com.android.support'
@@ -20,6 +21,9 @@ ext {
     robolectricPackage = 'org.robolectric'
     hamcrestPackage = 'org.hamcrest'
     gsonPackage = 'com.google.code.gson'
+    kinFoundationPackage = 'com.github.kinecosystem'
+
+    stellarSDK = buildDependency(kinFoundationPackage, 'android-stellar-sdk', stellarSDKVersion)
 
     supportDependencies = [
             supportAnnotations : buildDependency(supportPackage, 'support-annotations', supportVersion)
